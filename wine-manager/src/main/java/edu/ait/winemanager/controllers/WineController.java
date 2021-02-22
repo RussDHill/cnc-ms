@@ -5,6 +5,8 @@ import edu.ait.winemanager.repositories.WineRepository;
 import edu.ait.winemanager.dto.Wine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +23,8 @@ public class WineController {
     WineRepository wineRepository;
 
     @GetMapping("/wines")
-    public List<Wine> getAllWines() {
-        return wineRepository.findAll();
+    public Page<Wine> getWinesByPage(Pageable pageable) {
+        return wineRepository.findAll(pageable);
     }
 
     @GetMapping("/wines/{id}")

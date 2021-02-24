@@ -1,5 +1,6 @@
 package edu.ait.winemanager.controllers;
 
+import edu.ait.winemanager.dto.WineSummary;
 import edu.ait.winemanager.exceptions.WineNotFoundException;
 import edu.ait.winemanager.repositories.WineRepository;
 import edu.ait.winemanager.dto.Wine;
@@ -27,6 +28,16 @@ public class WineController {
         return wineRepository.findAll(pageable);
     }
 
+    @GetMapping("/wines/summary")
+    public List<WineSummary> getAllWinesBySummaries() {
+        return wineRepository.findAllWineSummariesBy();
+    }
+
+    @GetMapping("/wines/summary/year/{year}")
+    public List<WineSummary> getAllWinesBySummariesByYear(@PathVariable int year) {
+        return wineRepository.findAllWineSummariesByYear(year);
+    }
+
     @GetMapping("/wines/{id}")
     public Optional<Wine> getWineById(@PathVariable Integer id) {
         return wineRepository.findById(id);
@@ -44,6 +55,7 @@ public class WineController {
     @PostMapping("wines/")
     public ResponseEntity createWine(@RequestBody Wine newWine) {
 
+        newWine.setId(null);
         wineRepository.save(newWine);
 
         URI location = ServletUriComponentsBuilder
@@ -56,13 +68,12 @@ public class WineController {
     @PutMapping("wines/")
     public ResponseEntity updateWine(@RequestBody Wine newWine) {
 
-        if (newWine.getId() != null) {
-            wineRepository.save(newWine);
+        Integer newWineId = newWine.getId();
+        Wine savedWine = wineRepository.save(newWine);
 
+        if (savedWine.getId().equals(newWineId)) {
             return ResponseEntity.status(HttpStatus.OK).build();
         } else {
-            Wine savedWine = wineRepository.save(newWine);
-
             URI location = ServletUriComponentsBuilder
                     .fromCurrentRequest().path("{id}")
                     .buildAndExpand(savedWine.getId()).toUri();

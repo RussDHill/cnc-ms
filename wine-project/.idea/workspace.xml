@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52d8a748-229b-4922-b422-94853a9cd474" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pJR3zRENreVQTOrKbqu3lOnIcC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-feign" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.ClientFeignApplication">
+    <configuration name="ClientDiscoveryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.clientdiscovery.ClientDiscoveryApplication" />
+      <module name="client-discovery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.clientdiscovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientFeignApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.clientfeign.ClientFeignApplication" />
+      <module name="client-feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.clientfeign.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientRibbonApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.clientribbon.ClientRibbonApplication" />
+      <module name="client-ribbon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.clientribbon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NetflixEurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.netflixeurekaserver.NetflixEurekaServerApplication" />
+      <module name="netflix-eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.netflixeurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WineManagerApplication-1" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.winemanager.WineManagerApplication" />
+      <module name="wine-manager" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.winemanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WineManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.ait.winemanager.WineManagerApplication" />
+      <module name="wine-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.ait.winemanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.WineManagerApplication-1" />
+      <item itemvalue="Application.NetflixEurekaServerApplication" />
+      <item itemvalue="Application.WineManagerApplication" />
+      <item itemvalue="Application.ClientDiscoveryApplication" />
+      <item itemvalue="Application.ClientRibbonApplication" />
+      <item itemvalue="Application.ClientFeignApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientFeignApplication" />
+        <item itemvalue="Application.WineManagerApplication" />
+        <item itemvalue="Application.NetflixEurekaServerApplication" />
+        <item itemvalue="Application.ClientRibbonApplication" />
+        <item itemvalue="Application.ClientDiscoveryApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52d8a748-229b-4922-b422-94853a9cd474" name="Default Changelist" comment="" />
+      <created>1614899012108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614899012108</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
